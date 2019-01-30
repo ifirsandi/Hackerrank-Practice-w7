@@ -24,11 +24,14 @@ int main()
             else if (m==15){
                 printf("%s ", words[m]);
             }
+            else if (m==1){
+                printf("%s minute ", words[m]);      
+            }
             else if (m<21){
                 printf("%s minutes ", words[m]);      
             }
             else {
-                printf("%s %s minutes ", words[20], words[h-20]);
+                printf("%s %s minutes ", words[20], words[m-20]);
             }
             printf ("past ");
         }
@@ -37,11 +40,14 @@ int main()
             if (m==15){
                 printf("%s ", words[m]);
             }
+            else if (m==1){
+                printf("%s minute ", words[m]);      
+            }
             else if (m<21){
                 printf("%s minutes ", words[m]);      
             }
             else {
-                printf("%s %s minutes ", words[20], words[h-20]);
+                printf("%s %s minutes ", words[20], words[m-20]);
             }
             printf ("to ");
             h++;
